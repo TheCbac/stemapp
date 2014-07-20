@@ -2,7 +2,7 @@ Router.map(function() {
 	this.route('home', {
 		path:'/',
 		template:'homeTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -13,7 +13,7 @@ Router.map(function() {
 	this.route('demos', {
 		path:'/demos',
 		template:'demosTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -24,7 +24,7 @@ Router.map(function() {
 	this.route('labs', {
 		path:'/labs',
 		template:'labsTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -35,7 +35,7 @@ Router.map(function() {
 	this.route('hw', {
 		path:'/hw',
 		template:'hwTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -46,7 +46,7 @@ Router.map(function() {
 	this.route('quizzes', {
 		path:'/quizzes',
 		template:'quizzesTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -57,7 +57,7 @@ Router.map(function() {
 	this.route('challenge', {
 		path:'/challenge',
 		template:'challengeTemp',
-		layoutTemplate: 'layout',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},
@@ -65,10 +65,10 @@ Router.map(function() {
 		}
 	});
 
-	this.route('solutions', {
-		path:'/solutions',
-		template:'solutionsTemp',
-		layoutTemplate: 'layout',
+	this.route('lectureNotes', {
+		path:'/lectureNotes',
+		template:'lectureNotesTemp',
+		layoutTemplate: 'layoutSlideShow',
 		yieldTemplates: {
 			'myHeader': {to: 'head'},
 			'myNavBar': {to: 'nav'		},

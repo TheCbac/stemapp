@@ -1,0 +1,159 @@
+<!-- ############## Static Webpage templates ############## -->
+
+
+<template name="homeTemp">
+  <div class="content_item">
+  	<h1>Welcome To Robotics</h1> 
+  	<p>Join us on a five-week journey through electronics, mechanics, and controls modules to build a competitive drivable robot - DriveBot - from the ground up!</p>    
+
+  	<div class="content_imagetext">
+  		<div class="content_image">
+  			<a href="images/DriveBot.jpg"> <img height=150 width=150 src="DriveBot.jpg" alt="DriveBot"/> </a>
+  		</div>
+  	</div><!--close content_imagetext-->    
+  </div><!--close content_item-->
+</template>
+
+<template name="demosTemp">
+  {{> slideShowTemp}}
+  <h2>This is the Demos page</h2>
+</template>
+
+<template name="labsTemp">
+	<div class="solution">
+		<h3>Lab Handouts</h3>
+		<p>
+			<a class="solutionLink" href="/labs/Lab01_ChassisAssembly.pdf">				
+			Lab01 - Chassis Assembly </a>
+		</p>
+
+		<p>
+			<a class="solutionLink" href="/labs/Lab03_DriveTheLineChallenge.pdf">	
+			Lab02 - Drive The Line Challenge</a>
+		</p>
+
+		<p>
+			<a class="solutionLink" href="/labs/Lab04_BreadboardCircuits.pdf">		
+			Lab03 - Breadboard Circuits</a>
+		</p>
+	</div>
+</template>
+
+<template name="hwTemp">
+  {{> slideShowTemp}}
+  <h2>This is the hw page</h2>
+</template>
+
+<template name="quizzesTemp">
+  {{> slideShowTemp}}
+  <h2>This is the quizzes page</h2>
+</template>
+
+<template name="challengeTemp">
+  {{> slideShowTemp}}
+  <h2>This is the challenge page</h2>
+</template>
+
+<template name="lectureNotesTemp">
+  {{> slideShowTemp}}
+  <h2>This is the lecture notes page</h2>
+</template>
+
+<template name="aboutTemp">
+  <h2>This is the about page</h2>
+</template>
+
+
+
+
+
+
+
+
+ <!-- ############## Header, Navbar, Footer ############## -->
+<template name="myNavBar">
+
+  <div id="menubar">
+    <ul id="nav">
+      <li><a href="{{pathFor 'home'     }}"> Home     </a></li>
+      <li><a href="{{pathFor 'demos'    }}"> Demos    </a></li>
+      <li><a href="{{pathFor 'labs'     }}"> Labs     </a></li>
+      <li><a href="{{pathFor 'hw'       }}"> HW       </a></li>
+      <li><a href="{{pathFor 'quizzes'  }}"> Quizzes  </a></li>
+      <li><a href="{{pathFor 'challenge'}}"> Challenge</a></li>
+      <li><a href="{{pathFor 'lectureNotes'}}"> Lecture Notes</a></li>
+      <li><a href="{{pathFor 'about'    }}"> About    </a></li>
+    </ul>
+  </div> <!--close menubar-->  
+</template> <!-- close myNavBar -->
+
+<template name="myHeader">
+ <div id="banner">
+    <div id="welcome">
+      <a href="{{pathFor 'home'}}"><h2>STEM Robotics</h2></a>
+    </div><!--close welcome-->          
+  </div><!--close banner--> 
+</template>
+
+<template name="myFooter">
+  <a href="{{pathFor 'about'}}">Craig Cheney and Danielle Class</a>
+  <p>Copyright 2014</p>
+</template>
+
+<!-- ############## Slide Show  ############## -->
+
+<template name="slideShowTemp">
+    <div class="slideshow">
+      <ul class="slideshow">
+          <li class="show"><img width=940 height=300 src="04_Side.png"  /></li>
+          <li class="show"><img width="940" height="300" src="05_DriveBotTopView.png"/></li>
+        </ul> 
+    </div><!--close slideshow-->
+</template>
+
+
+<!-- ############## Side bar  ############## -->
+<template name="sideBarTemp">
+  <div class="sidebar_container">       
+    <div class="sidebar">
+      <div class="sidebar_item">
+        <h2>Course Overview</h2>
+        <h3>Week 1</h3>
+        <p>Introduction to: robotics, DriveBot, manufacturing, system diagrams, and electronics</p>         
+      </div><!--close sidebar_item--> 
+    </div><!--close sidebar-->
+
+    <div class="sidebar">
+        <div class="sidebar_item">
+          <h3>Week 2</h3>
+          <ul class="sidebarList">
+            <li>Ohm's Law</li>
+            <li>Quiz 1</li>
+            <li>Soldering Clinic</li>
+            <li>Potentiometers</li>
+          </ul>         
+        </div><!--close sidebar_item--> 
+      </div><!--close sidebar-->    
+
+      <div class="sidebar">
+        <div class="sidebar_item">
+          <h3>Week 3</h3>
+          <p>Coding: Arduino & PSoC</p>         
+        </div><!--close sidebar_item--> 
+      </div><!--close sidebar--> 
+
+      <div class="sidebar">
+        <div class="sidebar_item">
+          <h3>Week 4</h3>
+          <p>DriveBot: first pass at assembly</p>         
+        </div><!--close sidebar_item--> 
+      </div><!--close sidebar--> 
+
+      <div class="sidebar">
+        <div class="sidebar_item">
+          <h3>Week 5</h3>
+          <p>DriveBot: leveling up, competition preparation, and competition</p>         
+        </div><!--close sidebar_item--> 
+      </div><!--close sidebar--> 
+  </div> <!-- close sidebar_container -->
+</template>
