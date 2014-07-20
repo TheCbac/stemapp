@@ -1,0 +1,107 @@
+<head>
+  <title>STEM Robotics 2014</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  {{> renderRouter}}
+</body>
+
+<!-- ############## Templates ############## -->
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+
+
+
+ <!-- ############## Header, Navbar, Footer ############## -->
+<template name="myNavBar">
+
+  <div id="menubar">
+    <ul id="nav">
+      <li><a href="{{pathFor 'home'     }}"> Home     </a></li>
+      <li><a href="{{pathFor 'demos'    }}"> Demos    </a></li>
+      <li><a href="{{pathFor 'labs'     }}"> Labs     </a></li>
+      <li><a href="{{pathFor 'hw'       }}"> HW       </a></li>
+      <li><a href="{{pathFor 'quizzes'  }}"> Quizzes  </a></li>
+      <li><a href="{{pathFor 'challenge'}}"> Challenge</a></li>
+      <li><a href="{{pathFor 'solutions'}}"> Solutions</a></li>
+      <li><a href="{{pathFor 'about'    }}"> About    </a></li>
+    </ul>
+  </div> <!--close menubar-->  
+</template> <!-- close myNavBar -->
+
+<template name="myHeader">
+ <div id="banner">
+    <div id="welcome">
+      <a href="{{pathFor 'home'}}"><h2>STEM Robotics</h2></a>
+    </div><!--close welcome-->          
+  </div><!--close banner--> 
+</template>
+
+<template name="myFooter">
+  <a href="{{pathFor 'about'}}">Craig Cheney and Danielle Class</a>
+  <p>Copyright 2014</p>
+</template>
+
+<template name="slideShowTemp">
+    <div class="slideshow">
+      <ul class="slideshow">
+          <li class="show"><img width=940 height=300 src="images/04_Side.png" alt="&quot;DriveBot Side view&quot;" /></li>
+          <li><img width="940" height="300" src="images/05_DriveBotTopView.png" alt="&quot;DriveBot Top view&quot;" /></li>
+        </ul> 
+    </div><!--close slideshow--> 
+</template>
+
+ <!-- ############## Static Webpage templates ############## -->
+<template name="homeTemp">
+  {{slidesShowTemp}}
+  <h1>Hometemplate</h1>
+</template>
+
+<template name="demosTemp">
+  <h2>This is the Demos page</h2>
+</template>
+
+<template name="labsTemp">
+  <h2>This is the labs page</h2>
+</template>
+
+<template name="hwTemp">
+  <h2>This is the hw page</h2>
+</template>
+
+<template name="quizzesTemp">
+  <h2>This is the quizzes page</h2>
+</template>
+
+<template name="challengeTemp">
+  <h2>This is the challenge page</h2>
+</template>
+
+<template name="solutionsTemp">
+  <h2>This is the solution page</h2>
+</template>
+
+<template name="aboutTemp">
+  <h2>This is the about page</h2>
+</template>
+
+ <!-- ############## Main Layout ############## -->
+<template name="layout">
+  <div id="main">
+    <header>{{>yield region='head'}}</header>
+    <nav>{{> yield region='nav'}}</nav>
+    <div id="site_content">{{> yield}}</div>
+    <footer>{{> yield region='foot'}}</footer>
+  </div>
+</template>
