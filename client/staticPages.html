@@ -1,6 +1,7 @@
 <!-- ############## Static Webpage templates ############## -->
 
 
+<!-- Home page -->
 <template name="homeTemp">
   <div class="content_item">
   	<h1>Welcome To Robotics</h1> 
@@ -14,11 +15,15 @@
   </div><!--close content_item-->
 </template>
 
+
+<!-- demos page -->
 <template name="demosTemp">
   {{> slideShowTemp}}
   <h2>This is the Demos page</h2>
 </template>
 
+
+<!-- Labs Page -->
 <template name="labsTemp">
 	<div class="solution">
 		<h3>Lab Handouts</h3>
@@ -39,33 +44,100 @@
 	</div>
 </template>
 
+
+<!-- Homework Page -->
 <template name="hwTemp">
-  {{> slideShowTemp}}
-  <h2>This is the hw page</h2>
+	<div class="content_container">
+		<div class="solution">
+			<h3>Class 1 - <span id="date"> 7.7.14 </span></h3>
+			<p><a class="solutionLink" href="/hw/HW01_ManufacturingBrainstorm.pdf">Manufacturing Brainstorm.pdf</a></p>
+		</div>
+
+		<div class="solution">
+			<h3>Class 2 - <span id="date"> 7.8.14 </span></h3>
+			<p><a class="solutionLink" href="/hw/HW02a_DriveBotEmblemSketch.pdf">DriveBot Emblem Sketches.pdf</a></p>
+			<p><a class="solutionLink" href="/hw/HW02b_SystemDiagramPractice.pdf">System Diagram Practice.pdf</a></p>
+		</div>
+
+		<div class="solution">
+			<h3>Class 3 - <span id="date"> 7.9.14 </span></h3>
+			<p><a class="solutionLink" href="/hw/HW03_DriveBotModules.pdf">DriveBot Modules.pdf</a></p>
+		</div>
+
+		<div class="solution">
+			<h3>Class 6 - <span id="date"> 7.14.14 </span> </h3>
+			<p><a class="solutionLink" href="/hw/HW06_VoltageAndCurrentDividers.pdf">Electronics Practice: Voltage and Current Dividers.pdf</a></p>
+		</div>
+
+		<div class="solution">
+			<h3>Class 10 - <span id="date"> 7.18.14 </span></h3>
+			<p><a class="solutionLink" href="/hw/HW10_PresentationBrainstorm.pdf">Presentation Brainstorm.pdf</a></p>
+		</div>
+	</div>
 </template>
 
+
+<!-- Quiz Page -->
 <template name="quizzesTemp">
-  {{> slideShowTemp}}
-  <h2>This is the quizzes page</h2>
+	<div id="content_container">
+		<div class="solution">
+			<h3>Lab Safety</h3>
+			<p><a class ="solutionLink" href="quizzes/LabSafetyQuiz.pdf">Lab Safety Quiz.pdf</a></p>
+		</div>
+	</div><!--close content--> 
 </template>
 
+
+<!-- Challenge Page -->
 <template name="challengeTemp">
   {{> slideShowTemp}}
   <h2>This is the challenge page</h2>
 </template>
 
+<!-- LectureNotes page -->
 <template name="lectureNotesTemp">
-  {{> slideShowTemp}}
-  <h2>This is the lecture notes page</h2>
+	<div id="content_container">
+		<div class="solution">
+			<h3>Lecture 01 - Lab Safety</h3>
+			<p><a class ="solutionLink" href="lectureNotes/Lec01_LabSafetySummary.pdf">Lab Safety Summary.pdf</a></p>
+
+			<h3>Lecture 02 - System Diagrams</h3>
+			<p><a class ="solutionLink" href="lectureNotes/Lec02_SystemDiagramDriveBot.pdf">DriveBot's SystemDiagram.pdf</a></p>
+
+			<h3>Lecture 08 - Current and Voltage Divider</h3>
+			<p><a class ="solutionLink" href="lectureNotes/Lec08_CurrentDividerErrata.pdf">Errata - Current Divider.pdf</a></p>
+
+		</div>
+	</div><!--close content--> 
 </template>
 
+
+<!-- About Page -->
 <template name="aboutTemp">
-  <h2>This is the about page</h2>
+	<div class="content_item">
+		<div id="content_noside">
+			<h2>Craig Cheney</h2> 
+			<div class="content_imagetext">
+				<p id="description">Craig Cheney is one of the Robotics instructors for the STEM program. A Newberg, Oregon native, Craig recently received his bachelor’s of science in mechanical engineering, with a concentration in controls, instrumentation and robotics from MIT. In the past, Craig has worked as a researcher on sponsored and independent electromechanical systems, including developing a prosthetic-foot testing machine. Additionally, he was a teaching assistant for a Microcontroller Laboratory course. He was recently awarded the Eloranta Fellowship for undergraduate research to develop a machine to rapidly prototype printed circuit boards. Craig was heavily involved with varsity athletics during his undergraduate time at MIT including being the captain of the water polo team for two years. He received an NCAA postgraduate scholarship for outstanding student-athletes who are continuing on to graduate programs. He will be continuing on to earn his master’s of science in the same field at MIT beginning September 2014.</p>
+			</div><!--close content_imagetext-->
+			<div class="content_image">
+				<a href="/about/CraigCheney.jpg"> <img height=184 width=150 src="/about/CraigCheney.jpg" alt="Craig Cheney"/> </a>
+			</div><!--close content_image-->
+		</div><!--close content-->
+	</div> <!--close content_item-->   
+
+	<div class="content_item">
+		<div id="content_noside">
+			<h2>Danielle Class</h2> 
+			<div class="content_imagetext">
+				<p id="description">Danielle Class is a STEM Program Robotics’ instructor this summer. She is from Cumberland, Maryland and received her Bachelor of Science degree in chemical-biological engineering from MIT. Danielle has pursued a number of research initiatives, spanning from designing microfluidic chips for tissue engineering, to synthesizing polymers for gene therapy, to developing an innovative model to mechanize bag-valve-mask ventilators for nurses in Nicaragua. Through the MIT Gordon Engineering Leadership (GEL) Program, she mentored a team of undergraduate students through weekly engineering leadership labs, and through InstaEDU, offers remote tutoring to a collection of students. In preparation for a career in medicine, she plans to obtain a Master of Science in Medical Sciences from Boston University Medical School beginning in the fall, and subsequently an M.D.</p>
+			</div><!--close content_imagetext-->
+			<div class="content_image">
+				<a href="/about/DanielleClass.png"> <img height=184 width=150 src="/about/DanielleClass.png" alt="Danielle Class"/> </a>
+			</div><!--close content_image-->
+		</div><!--close content-->
+	</div> <!--close content_item--> 
 </template>
-
-
-
-
 
 
 
@@ -76,12 +148,12 @@
   <div id="menubar">
     <ul id="nav">
       <li><a href="{{pathFor 'home'     }}"> Home     </a></li>
+      <li><a href="{{pathFor 'lectureNotes'}}"> Lecture Notes</a></li>
       <li><a href="{{pathFor 'demos'    }}"> Demos    </a></li>
       <li><a href="{{pathFor 'labs'     }}"> Labs     </a></li>
       <li><a href="{{pathFor 'hw'       }}"> HW       </a></li>
       <li><a href="{{pathFor 'quizzes'  }}"> Quizzes  </a></li>
       <li><a href="{{pathFor 'challenge'}}"> Challenge</a></li>
-      <li><a href="{{pathFor 'lectureNotes'}}"> Lecture Notes</a></li>
       <li><a href="{{pathFor 'about'    }}"> About    </a></li>
     </ul>
   </div> <!--close menubar-->  
