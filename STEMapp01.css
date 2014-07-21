@@ -245,7 +245,7 @@ ul.sidebarList
   margin: 0 20px 10px 0;}
   
 .content_container
-{ width: 500px;
+{ width: 650px;
   padding: 5px;
   margin: 20px 10px 0 0;
   float: left;}
@@ -254,6 +254,12 @@ ul.sidebarList
 { font: normal 150% 'News Cycle', Arial, sans-serif;
   color:#FFF;
 
+}
+
+.handout_solution
+{ color:#275E89;
+  padding-left: 75px;
+  float:center;
 }
 
 .solution h3 
@@ -276,7 +282,7 @@ ul.sidebarList
 {
   font: normal 70% 'verdana', Arial, sans-serif;
   text-shadow: 1px 1px #000;
-  vertical-align: 2.5px;
+  vertical-align: 1.5px;
 }
 
 footer
