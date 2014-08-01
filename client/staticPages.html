@@ -6,7 +6,7 @@
   <div class="content_item">
   	<h1>Welcome To Robotics</h1> 
   	<p>Join us on a five-week journey through electronics, mechanics, and controls modules to build a competitive drivable robot - DriveBot - from the ground up!</p>
-  	<p>The website is still under construction, but feel free to browse around in the meantime. </p>   
+  	<p>The website is still under construction, but feel free to browse around in the meantime. </p>  
 
   	<div class="content_imagetext">
   		<div class="content_image">
@@ -61,6 +61,25 @@
 		</p>
 	</div>
 
+
+	{{> hello}}
+ <!-- Render the templates for the tiles -->
+	<div class="tiles">
+		this is still a test
+		{{#each getLabTiles}}
+			this is a test
+			{{> tilesTemplate}}
+		{{/each}}
+	</div>
+</template>
+
+
+<!-- Template for an individual tile -->
+<template name="tilesTemplate">
+	<div class = "tileName">
+		I am tiles template
+		{{id}}
+	</div>
 </template>
 
 
@@ -113,6 +132,11 @@
 
 		<div class="solution">
 			<p><a class="handout_solution" href="/hw/HW11Soln_Potentiometers.pdf">Potentiometer Practice (Solutions).pdf</a></p>
+		</div>
+
+		<div class="solution">
+			<h3>Class 20 - <span id="date"> 8.1.14 </span></h3>
+			<p><a class="solutionLink" href="/hw/HW20_DriveBotConnections.pdf">DriveBot connections.pdf</a></p>
 		</div>
 	</div>
 </template>
