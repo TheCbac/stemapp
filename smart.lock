@@ -15,6 +15,7 @@
         "git": "https://github.com/EventedMind/iron-layout.git",
         "tag": "v0.2.0",
         "commit": "4a2d53e35ba036b0c189c7ceca34be494d4c6c97"
+<<<<<<< HEAD
       },
       "collectionFS": {
         "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
@@ -147,6 +148,11 @@
         "tag": "v0.0.3",
         "commit": "70266ce2c273a12c5af17b5c056253936caabb01"
 =======
+=======
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+>>>>>>> e35eac4dabe56ac665e5c3eb58277a5c3607e5c3
         "tag": "v0.2.5",
         "commit": "273e3ab7d005d91a1a59c71bd224533b4dae2fbd"
       },
@@ -159,6 +165,9 @@
         "git": "https://github.com/EventedMind/iron-dynamic-template.git",
         "tag": "v0.2.1",
         "commit": "4dd1185c4d9d616c9abdb3f33e4a7d5a88db7e18"
+<<<<<<< HEAD
+>>>>>>> e35eac4dabe56ac665e5c3eb58277a5c3607e5c3
+=======
 >>>>>>> e35eac4dabe56ac665e5c3eb58277a5c3607e5c3
       }
     }
