@@ -231,6 +231,11 @@ ul.sidebarList
 {
   text-align: left;
 }
+
+.tiles
+{
+  color: white;
+}
  
 .content_imagetext
 { width: 600px;

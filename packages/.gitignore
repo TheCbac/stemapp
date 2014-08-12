@@ -1,5 +1,6 @@
 /iron-router
 /blaze-layout
+<<<<<<< HEAD
 /collectionFS
 /cfs-base-package
 /cfs-file
@@ -25,3 +26,8 @@
 /cfs-filesystem
 /reactive-property
 /micro-queue
+=======
+/iron-layout
+/iron-core
+/iron-dynamic-template
+>>>>>>> e35eac4dabe56ac665e5c3eb58277a5c3607e5c3
