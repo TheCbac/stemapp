@@ -1,4 +1,4 @@
-TileTab = new Meteor.Collection("tiletab");
+// TileTab = new Meteor.Collection("tiletab");
 
 
 if (Meteor.isClient) {
@@ -35,21 +35,21 @@ if (Meteor.isServer) {
     // code to run on server at startup
     // Init some tiles to test on
     
-    if (TileTab.find().count()===0){
-      // TileTab.insert({id:4});
+    // if (TileTab.find().count()===0){
+    //   // TileTab.insert({id:4});
 
-      var tileTitles=[["Teachers PWM", "demos"],
-                      ["HW01",  "HW"],
-                      ["HW02",  "HW"],
-                      ["Lab01", "labs"],
-                      ["lab02", "labs"]];
-      for (var i=0; i< 5; i++){
-        TileTab.insert({id:i});
-        // Tiles.insert({ id: i, 
-        //                title: tileTitles[i][0], 
-        //                category: tileTitles[i][1] });
-      };
-    };
+    //   var tileTitles=[["Teachers PWM", "demos"],
+    //                   ["HW01",  "HW"],
+    //                   ["HW02",  "HW"],
+    //                   ["Lab01", "labs"],
+    //                   ["lab02", "labs"]];
+    //   for (var i=0; i< 5; i++){
+    //     TileTab.insert({id:i});
+    //     // Tiles.insert({ id: i, 
+    //     //                title: tileTitles[i][0], 
+    //     //                category: tileTitles[i][1] });
+    //   };
+    // };
 
 
   });
